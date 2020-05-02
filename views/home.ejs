@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            This is Home Page
+        </title>
+    </head>
+    <body>
+        <h1>This is Profile <%=name%> page</h1>
+        <h3>Email:<%=data.email%></h3>
+        <ul>
+            <% data.skills.forEach(function(item){%>
+                    <li><%=item %></li>
+           <% }) %>
+        </ul>
+    </body>
+</html>
